@@ -1,139 +1,200 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Software Company Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-    <nav class="header__navbar">
+      <nav class="header__navbar">
         <div class="header__container">
-            <img src="img/Logo.svg" alt="Logo Ik Developers" class="header__logo__icon">
-            <ul class="nav__menu">
-                <li><a href="#about">About us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#case-studies">Case Studies</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#how-it-works">How it Works</a></li>
-                <li><a href="#hire">Hire</a></li>
-            </ul>
-            <a href="#contact" class="btn__primary">Contact us</a>
+          <img
+            src="img/Logo.svg"
+            alt="Logo Ik Developers"
+            class="header__logo__icon"
+          />
+          <ul class="nav__menu">
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#case-studies">Case Studies</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#how-it-works">How it Works</a></li>
+            <li><a href="#hire">Hire</a></li>
+          </ul>
+          <a href="#contact" class="btn__primary">Contact us</a>
         </div>
-    </nav>
-    <section class="header__hero">
+      </nav>
+      <section class="header__hero">
         <div class="header__container">
-            <div class="hero__content">
-                <div class="hero__text">
-                    <h1>
-                        Great <span class="highlight1">Product</span> is<br>
-                        built by great <span class="highlight2">teams</span>
-                    </h1>
-                    <p class="header__hero__description">
-                        We help build and manage a team of world-class developers<br>
-                        to bring your vision to life
-                    </p>
-                    <a href="#start" class="btn__cta">Let's get started!</a>
-                </div>
-                
-                <div class="hero__image">
-                    <img src="img/Hero-Wrapper__image.png" alt="Team collaboration illustration">
-                </div>
+          <div class="hero__content">
+            <div class="hero__text">
+              <h1>
+                Great <span class="highlight1">Product</span> is<br />
+                built by great <span class="highlight2">teams</span>
+              </h1>
+              <p class="header__hero__description">
+                We help build and manage a team of world-class developers<br />
+                to bring your vision to life
+              </p>
+              <a href="#start" class="btn__cta">Let's get started!</a>
             </div>
+
+            <div class="hero__image">
+              <img
+                src="img/Hero-Wrapper__image.png"
+                alt="Team collaboration illustration"
+              />
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
     </header>
     <main>
-        <!-- Section Services -->
-<section class="services">
-    <img src="img/Ellipse.png" alt="" class="services__ellipse">
-    
-    <div class="container">
-        <h2 class="services__title">Services we offer</h2>
-        
-        <div class="services__grid">
+      <!-- Section Services -->
+      <section class="services">
+        <img src="img/Ellipse.png" alt="" class="services__ellipse" />
+
+        <div class="container">
+          <h2 class="services__title">Services we offer</h2>
+
+          <div class="services__grid">
             <!-- Card 1 -->
             <article class="services__card services__card--featured">
-                <div class="services__card__icon services__card__icon--mobile">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <rect x="5" y="2" width="14" height="20" rx="2" stroke="#6B46C1" stroke-width="2"/>
-                        <line x1="12" y1="18" x2="12" y2="18" stroke="#6B46C1" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <h3 class="services__card__title">Mobile App Development</h3>
-                <p class="services__card__text">
-                    A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.
-                </p>
+              <div class="services__card__icon services__card__icon--mobile">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <rect
+                    x="5"
+                    y="2"
+                    width="14"
+                    height="20"
+                    rx="2"
+                    stroke="#6B46C1"
+                    stroke-width="2"
+                  />
+                  <line
+                    x1="12"
+                    y1="18"
+                    x2="12"
+                    y2="18"
+                    stroke="#6B46C1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="services__card__title">Mobile App Development</h3>
+              <p class="services__card__text">
+                A Website is an extension of yourself and we can help you to
+                express it properly. Your website is your number one marketing
+                asset because we live in a digital age.
+              </p>
             </article>
-            
+
             <!-- Card 2 -->
             <article class="services__card services__card--featured">
-                <div class="services__card__icon services__card__icon--code">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M16 18L22 12L16 6" stroke="#9333EA" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M8 6L2 12L8 18" stroke="#9333EA" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <h3 class="services__card__title">Web Design & Development</h3>
-                <p class="services__card__text">
-                    A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.
-                </p>
+              <div class="services__card__icon services__card__icon--code">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M16 18L22 12L16 6"
+                    stroke="#9333EA"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M8 6L2 12L8 18"
+                    stroke="#9333EA"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="services__card__title">Web Design & Development</h3>
+              <p class="services__card__text">
+                A Website is an extension of yourself and we can help you to
+                express it properly. Your website is your number one marketing
+                asset because we live in a digital age.
+              </p>
             </article>
-            
+
             <!-- Card 3 -->
             <article class="services__card services__card--featured">
-                <div class="services__card__icon services__card__icon--testing">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <rect x="3" y="3" width="18" height="18" rx="2" stroke="#6B46C1" stroke-width="2"/>
-                        <path d="M9 12L11 14L15 10" stroke="#6B46C1" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <h3 class="services__card__title">Software Testing Service</h3>
-                <p class="services__card__text">
-                    A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.
-                </p>
+              <div class="services__card__icon services__card__icon--testing">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <rect
+                    x="3"
+                    y="3"
+                    width="18"
+                    height="18"
+                    rx="2"
+                    stroke="#6B46C1"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M9 12L11 14L15 10"
+                    stroke="#6B46C1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="services__card__title">Software Testing Service</h3>
+              <p class="services__card__text">
+                A Website is an extension of yourself and we can help you to
+                express it properly. Your website is your number one marketing
+                asset because we live in a digital age.
+              </p>
             </article>
-            
+
             <!-- Card 4 -->
             <article class="services__card services__card--featured">
-                <div class="services__card__icon services__card__icon--software">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M16 18L22 12L16 6" stroke="#6B46C1" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M8 6L2 12L8 18" stroke="#6B46C1" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <h3 class="services__card__title">Software Tas</h3>
-                <p class="services__card__text">
-                    A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.
-                </p>
+              <div class="services__card__icon services__card__icon--software">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M16 18L22 12L16 6"
+                    stroke="#6B46C1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M8 6L2 12L8 18"
+                    stroke="#6B46C1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="services__card__title">Software Tas</h3>
+              <p class="services__card__text">
+                A Website is an extension of yourself and we can help you to
+                express it properly. Your website is your number one marketing
+                asset because we live in a digital age.
+              </p>
             </article>
-        </div>
-        <div class="services__pagination">
+          </div>
+          <div class="services__pagination">
             <div class="services__dots">
-                <span class="services__dot"></span>
-                <span class="services__dot"></span>
-                <span class="services__dot services__dot--active"></span>
-                <span class="services__dot"></span>
-                <span class="services__dot"></span>
+              <span class="services__dot"></span>
+              <span class="services__dot"></span>
+              <span class="services__dot services__dot--active"></span>
+              <span class="services__dot"></span>
+              <span class="services__dot"></span>
             </div>
             <div class="services__counter">
-                <span class="services__counter__current">01</span>
-                <span class="services__counter__separator">—</span>
-                <span class="services__counter__total">05</span>
+              <span class="services__counter__current">01</span>
+              <span class="services__counter__separator">—</span>
+              <span class="services__counter__total">05</span>
             </div>
+          </div>
         </div>
-    </div>
-</section>
-        
-
+      </section>
     </main>
-</body>
+  </body>
 </html>
-
-                
-            
-            

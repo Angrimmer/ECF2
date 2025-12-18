@@ -43,7 +43,6 @@ body {
 .header__logo__icon {
     height: 50px;
     width: 200px;
-    ;
 }
 
 .nav__menu {
@@ -172,6 +171,7 @@ body {
 /* ============================================
    SERVICES SECTION
    ============================================ */
+
 .services {
     padding: 120px 0 100px;
     background: lightgray;
@@ -275,12 +275,10 @@ body {
 }
 
 /* pagination points */
-.services__dots {
+.services__dots {              /* i do my best without JS */
     display: flex;
     gap: 10px;
 }
-
-/* i do my best without JS */
 
 .services__dot {
     width: 12px;
