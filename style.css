@@ -238,15 +238,18 @@ body {
     background: linear-gradient(135deg, #F3E8FF 0%, #FAE8FF 100%);
 }
 
+/* normal title */
 .services__card__title {
     font-size: 20px;
     font-weight: 600;
     color: #2D3748;
     margin-bottom: 16px;
     line-height: 1.3;
+    transition: color 0.3s ease; /* Fluid animation */
 }
 
-.services__card__title--featured {
+/* get violet with hover */
+.services__card:hover .services__card__title {
     color: #C026D3;
 }
 
@@ -306,7 +309,7 @@ body {
 }
 
 .services__counter__separator {
-    color: #CBD5E0;
+    color: #000000;
 }
 
 .services__counter__total {
