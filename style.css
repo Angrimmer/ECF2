@@ -119,7 +119,7 @@ body {
 }
 
 .header__hero h1 .highlight1 {
-    background: linear-gradient(to bottom, #DE4396 100%, #0D1C9F 0%);
+    background: linear-gradient(to bottom, rgba(222, 67, 150, 1) 0%, rgba(13, 28, 159, 0.10) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -127,7 +127,7 @@ body {
 }
 
 .header__hero h1 .highlight2 {
-    background: linear-gradient(to bottom, #F7666F 0%, #406AFF 100%);
+    background: linear-gradient(to bottom, #F7666F 15%, #406AFF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -142,7 +142,7 @@ body {
 }
 
 .btn__cta {
-    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    background: linear-gradient(135deg, #3B82F6 30%, #2563EB 100%);
     color: #FFFFFF;
     padding: 16px 40px;
     border-radius: 8px;
@@ -250,8 +250,13 @@ body {
 
 /* get violet with hover */
 .services__card:hover .services__card__title {
-    color: #C026D3;
+    display: inline-block;
+    background: linear-gradient(175deg, #F76680 50%, #57007b 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
+
 
 .services__card__text {
     font-size: 14px;
@@ -353,7 +358,7 @@ body {
     }
     
     .nav__menu {
-        display: none; /* À remplacer par un menu burger que je ne sais pas faire, vu que ça demande du js que je n'ai pas encore vu !*/
+        display: none; /* check how to CSS burger -not to eat-*/
     }
     
     .hero__content {
@@ -390,7 +395,7 @@ body {
         padding: 30px 20px;
     }
     
-    /* L'effet hover fonctionne aussi au tap sur mobile */
+    /* hover : ok on tap */
     .services__card--featured:active {
         transform: translateY(15px);
     }
