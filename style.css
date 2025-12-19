@@ -182,10 +182,11 @@ body {
 /* Ellipse transition */
 .services__ellipse {
     position: absolute;
-    translate: 850px -150px;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 60px;
+    top: -4%;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    width: 72px;
+    height: 72px;
     z-index: 1;
     transform: rotate(90deg);
 }
@@ -319,6 +320,140 @@ body {
 }
 
 /* ============================================
+   LEADING COMPANIES SECTION
+   ============================================ */
+
+.leading-companies {
+    padding: 100px 0;
+    background: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Transition Ellipses */
+.leading-companies__ellipse {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.leading-companies__ellipse--top {
+    top: 0;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.leading-companies__ellipse--bottom {
+    bottom: 0;
+    transform: translateX(-50%) translateY(50%);
+}
+
+.leading-companies__content {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.leading-companies__text {
+    flex: 1;
+    max-width: 535px;
+}
+
+/* Pink laser */
+.leading-companies__decoration {
+    width: 50px;
+    height: 4px;
+    background: linear-gradient(90deg, #F76680 0%, #EC4899 100%);
+    border-radius: 2px;
+    margin-bottom: 24px;
+}
+
+.leading-companies__title {
+    font-size: 38px;
+    font-weight: 600;
+    color: #2D3748;
+    line-height: 1.3;
+    margin-bottom: 24px;
+}
+
+.leading-companies__title--highlight {
+    color: #1A202C;
+    font-weight: 700;
+}
+
+.leading-companies__description {
+    font-size: 16px;
+    color: #718096;
+    line-height: 1.8;
+    margin-bottom: 32px;
+}
+
+.leading-companies__highlight-text {
+    color: #2D3748;
+    font-weight: 600;
+}
+
+.leading-companies__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #9333EA;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: gap 0.3s ease;
+}
+
+.leading-companies__link:hover {
+    gap: 12px;
+}
+
+.leading-companies__link__arrow {
+    transition: transform 0.3s ease;
+}
+
+.leading-companies__link:hover .leading-companies__link__arrow {
+    transform: translateX(4px);
+}
+
+.leading-companies__video {
+    flex: 1;
+    max-width: 601px;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.leading-companies__video__img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Button play */
+.leading-companies__video__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.leading-companies__video__play:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.leading-companies__video__play svg {
+    filter: drop-shadow(0 4px 12px rgba(147, 51, 234, 0.4));
+}
+
+/* ============================================
    RESPONSIVE DESIGN
    ============================================ */
 
@@ -343,6 +478,16 @@ body {
     .services__title {
         font-size: 40px;
         margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .leading-companies__content {
+        gap: 50px;
+    }
+    
+    .leading-companies__title {
+        font-size: 32px;
     }
 }
 
@@ -400,5 +545,32 @@ body {
     .services__pagination {
         flex-direction: column;
         gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .leading-companies {
+        padding: 80px 0;
+    }
+    
+    .leading-companies__content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .leading-companies__text {
+        max-width: 100%;
+    }
+    
+    .leading-companies__title {
+        font-size: 28px;
+    }
+    
+    .leading-companies__title br {
+        display: none;
+    }
+    
+    .leading-companies__video {
+        max-width: 100%;
     }
 }
