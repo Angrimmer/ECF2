@@ -90,11 +90,12 @@ body {
     padding: 80px 0 120px;
     background: #FFFFFF;
     position: relative;
+    z-index: 3;
 }
 
-.heade__hero .header__container {
+.header__hero .header__container {
     position: relative;
-    z-index: 1;
+    z-index: 3;
 }
 
 .hero__content {
@@ -177,18 +178,18 @@ body {
     background: lightgray;
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 
 /* Ellipse transition */
 .services__ellipse {
     position: absolute;
-    top: -4%;
+    top: 0;
     left: 50%;
-    transform: translateX(-50%) translateY(50%);
+    transform: translateX(-50%) translateY(-50%) rotate(90deg);
     width: 72px;
     height: 72px;
-    z-index: 1;
-    transform: rotate(90deg);
+    z-index: 2;
 }
 
 .services__title {
@@ -454,10 +455,130 @@ body {
 }
 
 /* ============================================
-   RESPONSIVE DESIGN
+   MEET THE PEOPLE (in leading-companies)
    ============================================ */
 
-/* Responsive tablet */
+.meet-people {
+    margin-top: 100px;
+    position: relative;
+    padding-bottom: 80px; /* ellipse space */
+}
+
+.meet-people__header {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.meet-people__decoration {
+    width: 50px;
+    height: 4px;
+    background: linear-gradient(90deg, #F76680 0%, #EC4899 100%);
+    border-radius: 2px;
+    margin-bottom: 16px;
+}
+
+.meet-people__subtitle {
+    font-size: 18px;
+    color: #718096;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.meet-people__title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #2D3748;
+    line-height: 1.2;
+}
+
+.meet-people__slider {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    background-color: lightgray;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    z-index: 2;
+}
+
+.meet-people__logos {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex: 1;
+    overflow-x: auto; /* get lateral scroll */
+    scroll-behavior: smooth; /* Fluid animation */
+    scrollbar-width: none; /* hide Firefox scrollbar */
+    -ms-overflow-style: none; /* hide IE scrollbar */
+}
+
+/* hide Webkit scrollbar (Chrome, Safari) */
+.meet-people__logos::-webkit-scrollbar {
+    display: none;
+}
+
+.meet-people__logo {
+    max-width: 140px;
+    min-width: 140px;
+    height: auto;
+    flex-shrink: 0;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.meet-people__logo:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.meet-people__nav {
+    display: flex;
+    gap: 16px;
+    flex-shrink: 0;
+    margin-top: -80px; 
+}
+
+.meet-people__nav__btn {
+    width: 48px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 2px solid #E2E8F0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.meet-people__nav__btn:hover {
+    border-color: #9333EA;
+    background: #F3E8FF;
+    transform: scale(1.05);
+}
+
+.meet-people__nav__btn:hover svg path {
+    stroke: #9333EA;
+}
+
+.meet-people__ellipse {
+    position: absolute;
+    bottom: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    width: 72px;
+    height: 72px;
+    z-index: 1;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN TABLET
+   ============================================ */
+
+/* Responsive tablet for Header section */
 
 @media (max-width: 1024px) {
     .hero__content {
@@ -468,6 +589,8 @@ body {
         font-size: 48px;
     }
 }
+
+/* Responsive tablet for service section */
 
 @media (max-width: 1024px) {
     .services__grid {
@@ -481,6 +604,8 @@ body {
     }
 }
 
+/* Responsive tablet for leading companies section */
+
 @media (max-width: 1024px) {
     .leading-companies__content {
         gap: 50px;
@@ -491,7 +616,32 @@ body {
     }
 }
 
-/* Responsive mobile */
+/* Responsive tablet for meet the people part */
+
+@media (max-width: 1024px) {
+    .meet-people {
+        margin-top: 80px;
+    }
+    
+    .meet-people__title {
+        font-size: 38px;
+    }
+    
+    .meet-people__logos {
+        gap: 40px;
+    }
+    
+    .meet-people__logo {
+        max-width: 100px;
+        min-width: 100px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE DESIGN MOBILE
+   ============================================ */
+
+/* Responsive mobile for Header section */
 
 @media (max-width: 768px) {
     .header__navbar .header__container {
@@ -517,6 +667,8 @@ body {
         height: 70%;
     }
 }
+
+/* Responsive mobile for service section */
 
 @media (max-width: 768px) {
     .services {
@@ -548,6 +700,8 @@ body {
     }
 }
 
+/* Responsive mobile for leading companies section */
+
 @media (max-width: 768px) {
     .leading-companies {
         padding: 80px 0;
@@ -572,5 +726,42 @@ body {
     
     .leading-companies__video {
         max-width: 100%;
+    }
+}
+
+/* Responsive mobile for meet the people part */
+
+@media (max-width: 768px) {
+    .meet-people {
+        margin-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+    .meet-people__title {
+        font-size: 28px;
+    }
+    
+    .meet-people__slider {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .meet-people__logos {
+        gap: 30px;
+    }
+    
+    .meet-people__logo {
+        max-width: 80px;
+        min-width: 80px;
+    }
+    
+    .meet-people__nav {
+        align-self: center;
+        margin-top: 0;
+    }
+    
+    .meet-people__nav__btn {
+        width: 40px;
+        height: 40px;
     }
 }

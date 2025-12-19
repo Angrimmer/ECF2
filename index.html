@@ -61,10 +61,8 @@
       <!-- Section Services -->
       <section class="services">
         <img src="img/Ellipse.png" alt="" class="services__ellipse" />
-
         <div class="container">
           <h2 class="services__title">Services we offer</h2>
-
           <div class="services__grid">
             <!-- Card 1 -->
             <article class="services__card services__card--featured">
@@ -197,37 +195,70 @@
       </section>
       <!-- Section Leading Companies -->
       <section class="leading-companies">
-          <img src="img/Ellipse.png" alt="" class="leading-companies__ellipse leading-companies__ellipse--top">
-          <div class="container">
-              <div class="leading-companies__content">
-                  <div class="leading-companies__text">
-                      <div class="leading-companies__decoration"></div>
-                      <h2 class="leading-companies__title">
-                          Leading companies trust us<br>
-                          <span class="leading-companies__title--highlight">to develop software</span>
-                      </h2>
-                      <p class="leading-companies__description">
-                          We <span class="leading-companies__highlight-text">add development capacity</span> to tech teams. Our value isn't limited to building teams but is equally distributed across the project lifecycle. We are a custom software development company that guarantees the successful delivery of your project.
-                      </p>
-                      <a href="#" class="leading-companies__link">
-                          See more Informations
-                          <span class="leading-companies__link__arrow">→</span>
-                      </a>
-                  </div>
-                  <div class="leading-companies__video">
-                      <img src="img/Abou-us-Video.png" alt="Our team working together" class="leading-companies__video__img">
-                      <button class="leading-companies__video__play" aria-label="Play video">
-                          <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
-                              ircle cx="30" cy="30" r="30" fill="#9333EA"/>
-                              <path d="M24 20L40 30L24 40V20Z" fill="white"/>
-                          </svg>
-                      </button>
-                  </div>
+        <img src="img/Ellipse.png" alt="" class="leading-companies__ellipse leading-companies__ellipse--top">
+        <div class="container">
+          <div class="leading-companies__content">
+            <div class="leading-companies__text">
+              <div class="leading-companies__decoration"></div>
+                <h2 class="leading-companies__title">
+                  Leading companies trust us<br>
+                  <span class="leading-companies__title--highlight">to develop software</span>
+                </h2>
+                <p class="leading-companies__description">
+                  We <span class="leading-companies__highlight-text">add development capacity</span> to tech teams. Our value isn't limited to building teams but is equally distributed across the project lifecycle. We are a custom software development company that guarantees the successful delivery of your project.
+                </p>
+                <a href="#" class="leading-companies__link">
+                  See more Informations
+                  <span class="leading-companies__link__arrow">→</span>
+                </a>
               </div>
+              <div class="leading-companies__video">
+              <img src="img/Abou-us-Video.png" alt="Our team working together" class="leading-companies__video__img">
+              <button class="leading-companies__video__play" aria-label="Play video">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                <circle cx="30" cy="30" r="30" fill="#6B46C1"/>
+                <path d="M24 20L40 30L24 40V20Z" fill="white"/>
+                </svg>
+              </button>
             </div>
-          <img src="img/Ellipse.png" alt="" class="leading-companies__ellipse leading-companies__ellipse--bottom">
+          </div>
+        </div
+        <img src="img/Ellipse.png" alt="" class="leading-companies__ellipse leading-companies__ellipse--bottom">
+        <!-- part Meet the People -->
+        <div class="meet-people">
+          <div class="meet-people__header">
+            <div class="meet-people__decoration"></div>
+              <h3 class="meet-people__subtitle">Meet the People</h3>
+              <h2 class="meet-people__title">We are Working With</h2>
+          </div>
+          <div class="meet-people__slider">
+            <div class="meet-people__logos" id="logos-slider">
+              <img src="img/partner_logo/sampath.svg" alt="Sampath" class="meet-people__logo">
+               <img src="img/partner_logo/yellow_gray.svg" alt="OYO Rooms" class="meet-people__logo">
+               <img src="img/partner_logo/adclipse.svg" alt="AdClipse" class="meet-people__logo">
+               <img src="img/partner_logo/pgc.svg" alt="PJC Bridge" class="meet-people__logo">
+               <img src="img/partner_logo/clickorder.svg" alt="Click Order" class="meet-people__logo">
+               <img src="img/partner_logo/techmate.svg" alt="TechMojo" class="meet-people__logo">
+               <!-- just for scroll sake -->
+               <img src="img/partner_logo/sampath.svg" alt="Sampath" class="meet-people__logo">
+               <img src="img/partner_logo/yellow_gray.svg" alt="OYO Rooms" class="meet-people__logo">
+             </div>
+            <div class="meet-people__nav">
+              <button class="meet-people__nav__btn meet-people__nav__btn--prev" aria-label="Previous partners" onclick="document.getElementById('logos-slider').scrollBy({left: -200, behavior: 'smooth'})">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M12 4L6 10L12 16" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                 </svg>
+               </button>
+               <button class="meet-people__nav__btn meet-people__nav__btn--next" aria-label="Next partners" onclick="document.getElementById('logos-slider').scrollBy({left: 200, behavior: 'smooth'})">
+                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                 <path d="M8 4L14 10L8 16" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                 </svg>
+              </button>
+             </div>
+          </div>
+            <img src="img/Ellipse.png" alt="" class="meet-people__ellipse">
+        </div>
       </section>
-
     </main>
   </body>
 </html>
