@@ -878,6 +878,127 @@ body {
 }
 
 /* ============================================
+    building-software SECTION
+   ============================================ */
+
+.building-software {
+  padding: 100px 0;
+  background: white;
+}
+
+.building-software__decoration {
+  width: 60px;
+  height: 4px;
+  background: #EC4899;
+  margin: 0 auto 20px;
+  border-radius: 2px;
+}
+
+.building-software__title {
+  text-align: center;
+  font-size: 48px;
+  color: #6B7280;
+  font-weight: 400;
+  margin-bottom: 80px;
+  line-height: 1.3;
+}
+
+.building-software__title strong {
+  display: block;
+  color: #1F2937;
+  font-weight: 700;
+}
+
+.building-software__card {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.building-software__card--reverse {
+  flex-direction: row-reverse;
+}
+
+.building-software__content {
+  flex: 1;
+}
+
+.building-software__content h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 24px;
+}
+
+.building-software__content p {
+  font-size: 16px;
+  color: #6B7280;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.building-software__content a {
+  color: #EC4899;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.building-software__content a:hover {
+  text-decoration: underline;
+}
+
+.building-software__quote {
+  margin-top: 30px;
+  padding-left: 20px;
+  border-left: 4px solid #EC4899;
+}
+
+.building-software__quote p {
+  font-style: italic;
+  color: #EC4899;
+  margin-bottom: 16px;
+}
+
+.building-software__author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.building-software__author img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.building-software__author .name {
+  font-weight: 600;
+  font-style: normal;
+  color: #1F2937;
+  margin-bottom: 4px;
+}
+
+.building-software__author .title {
+  font-size: 14px;
+  font-style: normal;
+  color: #6B7280;
+}
+
+.building-software__image {
+  flex: 1;
+  position: relative;
+}
+
+.building-software__image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* ============================================
    RESPONSIVE DESIGN TABLET
    ============================================ */
 
@@ -964,6 +1085,18 @@ body {
   .case-studies__mockups {
     width: 100%;
     max-width: 500px;
+  }
+}
+
+/* responsive tablet for building software section */
+
+@media (max-width: 1024px) {
+  .building-software__card {
+    flex-direction: column;
+  }
+  
+  .building-software__card--reverse {
+    flex-direction: column;
   }
 }
 
@@ -1148,5 +1281,17 @@ body {
   
   .case-studies__card-title {
     font-size: 24px;
+  }
+}
+
+/* responsive mobile for building software section */
+
+@media (max-width: 768px) {
+  .building-software__title {
+    font-size: 36px;
+  }
+  
+  .building-software__content h3 {
+    font-size: 28px;
   }
 }
