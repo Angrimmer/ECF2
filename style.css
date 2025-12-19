@@ -881,7 +881,7 @@ body {
     building-software SECTION
    ============================================ */
 
-   .building-software {
+.building-software {
   padding: 100px 0;
   background: white;
 }
@@ -909,147 +909,93 @@ body {
   font-weight: 700;
 }
 
-/* Card */
 .building-software__card {
   display: flex;
-  align-items: flex-start;
   gap: 60px;
+  align-items: center;
   margin-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-.building-software__card--left {
-  flex-direction: row;
-}
-
-.building-software__card--right {
+.building-software__card--reverse {
   flex-direction: row-reverse;
 }
 
-/* Content */
 .building-software__content {
   flex: 1;
-  max-width: 550px;
 }
 
-.building-software__card-title {
+.building-software__content h3 {
   font-size: 36px;
   font-weight: 700;
   color: #1F2937;
   margin-bottom: 24px;
-  line-height: 1.2;
 }
 
-.building-software__card-text {
+.building-software__content p {
   font-size: 16px;
   color: #6B7280;
   line-height: 1.7;
   margin-bottom: 16px;
 }
 
-.building-software__link {
+.building-software__content a {
   color: #EC4899;
   font-weight: 600;
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
-.building-software__link:hover {
-  color: #BE185D;
+.building-software__content a:hover {
   text-decoration: underline;
 }
 
-/* Quote */
 .building-software__quote {
-  margin-top: 32px;
+  margin-top: 30px;
   padding-left: 20px;
   border-left: 4px solid #EC4899;
-  font-style: italic;
-  color: #EC4899;
-  line-height: 1.6;
 }
 
 .building-software__quote p {
-  margin-bottom: 20px;
+  font-style: italic;
+  color: #EC4899;
+  margin-bottom: 16px;
 }
 
-/* Author */
 .building-software__author {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: 16px;
 }
 
-.building-software__avatar {
+.building-software__author img {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  object-fit: cover;
 }
 
-.building-software__author-name {
+.building-software__author .name {
   font-weight: 600;
   font-style: normal;
   color: #1F2937;
   margin-bottom: 4px;
 }
 
-.building-software__author-title {
+.building-software__author .title {
   font-size: 14px;
   font-style: normal;
   color: #6B7280;
 }
 
-/* Image Wrapper avec ellipses */
-.building-software__image-wrapper {
-  position: relative;
+.building-software__image {
   flex: 1;
-  max-width: 550px;
+  position: relative;
 }
 
-.building-software__image {
+.building-software__image img {
   width: 100%;
   height: auto;
   border-radius: 12px;
-  object-fit: cover;
-}
-
-/* Ellipses décoratives */
-.building-software__ellipse {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-}
-
-.building-software__ellipse--yellow {
-  top: -30px;
-  left: -30px;
-}
-
-.building-software__ellipse--pink {
-  bottom: -20px;
-  right: -20px;
-  width: 60px;
-  height: 60px;
-}
-
-.building-software__ellipse--yellow-2 {
-  bottom: -30px;
-  left: -30px;
-}
-
-.building-software__ellipse--pink-2 {
-  top: -20px;
-  right: -20px;
-  width: 60px;
-  height: 60px;
-}
-
-.building-software__ellipse--pink-3 {
-  top: -30px;
-  right: -30px;
-  width: 70px;
-  height: 70px;
 }
 
 /* ============================================
@@ -1139,6 +1085,18 @@ body {
   .case-studies__mockups {
     width: 100%;
     max-width: 500px;
+  }
+}
+
+/* responsive tablet for building software section */
+
+@media (max-width: 1024px) {
+  .building-software__card {
+    flex-direction: column;
+  }
+  
+  .building-software__card--reverse {
+    flex-direction: column;
   }
 }
 
@@ -1323,5 +1281,17 @@ body {
   
   .case-studies__card-title {
     font-size: 24px;
+  }
+}
+
+/* responsive mobile for building software section */
+
+@media (max-width: 768px) {
+  .building-software__title {
+    font-size: 36px;
+  }
+  
+  .building-software__content h3 {
+    font-size: 28px;
   }
 }
