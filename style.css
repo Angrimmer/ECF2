@@ -756,6 +756,8 @@ body {
 
 .case-studies {
   background: #f7f7fA;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .case-studies__decoration {
