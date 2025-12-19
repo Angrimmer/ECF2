@@ -324,6 +324,10 @@ body {
    LEADING COMPANIES SECTION
    ============================================ */
 
+.leading-companies__container {
+    display: flex;
+    justify-content: center;
+}
 .leading-companies {
     padding: 100px 0;
     background: #FFFFFF;
@@ -578,6 +582,175 @@ body {
 }
 
 /* ============================================
+   CUSTOMER FEEDBACKS SECTION
+   ============================================ */
+
+.customer-feedbacks {
+    padding: 0px 0 180px;
+    background: #FFFFFF;
+    position: relative;
+    text-align: center;
+}
+
+.customer-feedbacks__decoration {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #F76680 0%, #EC4899 100%);
+    border-radius: 2px;
+    margin: 0 auto 24px;
+}
+
+.customer-feedbacks__title {
+    font-size: 36px;
+    font-weight: 400;
+    color: #4A5568;
+    line-height: 1.4;
+    margin-bottom: 50px;
+}
+
+.customer-feedbacks__title strong {
+    font-weight: 700;
+    color: #2D3748;
+}
+
+.customer-feedbacks__testimonial {
+    position: relative;
+    max-width: 660px;
+    margin: 0 auto 60px;
+    padding: 0 40px;
+}
+
+.customer-feedbacks__quote {
+    font-size: 40px;
+    font-family: Georgia, serif;
+    color: #EC4899;
+    font-weight: bold;
+    line-height: 1;
+    position: absolute;
+}
+
+.customer-feedbacks__quote--left {
+    top: -10px;
+    left: 0;
+}
+
+.customer-feedbacks__quote--right {
+    bottom: -10px;
+    right: 0;
+}
+
+.customer-feedbacks__text {
+    font-size: 16px;
+    color: #718096;
+    line-height: 1.8;
+}
+
+/* Clients grid */
+.customer-feedbacks__clients {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* Client card */
+.customer-feedbacks__client {
+    text-align: center;
+}
+
+.customer-feedbacks__client__avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border: 3px solid transparent;
+}
+
+.customer-feedbacks__client--active .customer-feedbacks__client__avatar {
+    width: 100px;
+    height: 100px;
+}
+
+.customer-feedbacks__client__stars {
+    color: #FDB022;
+    font-size: 14px;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+
+.customer-feedbacks__client__name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2D3748;
+    margin-bottom: 4px;
+}
+
+.customer-feedbacks__client__role {
+    font-size: 12px;
+    color: #A0AEC0;
+}
+
+.customer-feedbacks__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: white;
+  border: 2px solid transparent;
+  background-image: linear-gradient(white, white), linear-gradient(135deg, #F76B80, #57007B);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.customer-feedbacks__nav svg {
+  display: none; /* hide SVG arrows */
+}
+
+/* Yes, i'm masochist -- arrow creation with CSS */
+.customer-feedbacks__nav::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #5454D4;
+  border-right: 2px solid #5454D4;
+}
+
+.customer-feedbacks__nav--prev {
+  left: 20px;
+}
+
+.customer-feedbacks__nav--prev::before {
+  transform: rotate(-135deg);
+  margin-left: 4px;
+}
+
+.customer-feedbacks__nav--next {
+  right: 20px;
+}
+
+.customer-feedbacks__nav--next::before {
+  transform: rotate(45deg);
+  margin-right: 4px;
+}
+
+.customer-feedbacks__nav:hover {
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 5px 15px rgba(84, 84, 212, 0.3);
+}
+
+
+
+/* ============================================
    RESPONSIVE DESIGN TABLET
    ============================================ */
 
@@ -637,6 +810,18 @@ body {
     .meet-people__logo {
         max-width: 100px;
         min-width: 100px;
+    }
+}
+
+/* Responsive tablet for customer feedbacks section */
+
+@media (max-width: 1024px) {
+    .customer-feedbacks__clients {
+        gap: 20px;
+    }
+    
+    .customer-feedbacks__nav {
+        display: none;
     }
 }
 
@@ -766,5 +951,44 @@ body {
     .meet-people__nav__btn {
         width: 40px;
         height: 40px;
+    }
+}
+
+/* Responsive mobile for customer feedbacks section */
+
+@media (max-width: 768px) {
+    .customer-feedbacks {
+        padding: 80px 20px 120px;
+    }
+    
+    .customer-feedbacks__title {
+        font-size: 28px;
+    }
+    
+    .customer-feedbacks__testimonial {
+        padding: 0 30px;
+    }
+    
+    .customer-feedbacks__quote {
+        font-size: 30px;
+    }
+    
+    .customer-feedbacks__clients {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .customer-feedbacks__client {
+        flex: 0 0 calc(33.333% - 10px);
+    }
+    
+    .customer-feedbacks__client__avatar {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .customer-feedbacks__client--active .customer-feedbacks__client__avatar {
+        width: 70px;
+        height: 70px;
     }
 }
