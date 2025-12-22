@@ -1192,6 +1192,15 @@ body {
   transform: scale(1.1);
 }
 
+/* ! separation line */
+.divider {
+  width: 100%;
+  max-width: 1440px;
+  height: 1px;
+  background: #E7DAED;
+  margin: 80px auto;
+}
+
 /* ============================================
    DEV-PROCESS SECTION
    ============================================ */
