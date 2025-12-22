@@ -1472,11 +1472,13 @@ body {
   transition: all 0.3s ease;
   white-space: nowrap;
   box-shadow: 0 4px 12px rgba(255, 122, 89, 0.3);
+  z-index: 3;
 }
 
 .cta__button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(255, 122, 89, 0.4);
+  z-index: 3;
 }
 
 .cta__highlight-button {
