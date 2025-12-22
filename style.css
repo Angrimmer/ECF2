@@ -587,7 +587,7 @@ body {
    ============================================ */
 
 .customer-feedbacks {
-    padding: 0px 0 180px;
+    padding: 0px 0 130px;
     background: #FFFFFF;
     position: relative;
     text-align: center;
@@ -646,7 +646,6 @@ body {
     line-height: 1.8;
 }
 
-/* Clients grid */
 .customer-feedbacks__clients {
     display: flex;
     justify-content: center;
@@ -655,7 +654,6 @@ body {
     margin-bottom: 40px;
 }
 
-/* Client card */
 .customer-feedbacks__client {
     text-align: center;
 }
@@ -717,7 +715,7 @@ body {
   display: none; /* hide SVG arrows */
 }
 
-/* ? Yes, i'm masochist -- arrow creation with CSS */
+/* ? Yes, i'm masochist -- arrow (nav) creation with CSS */
 .customer-feedbacks__nav::before {
   content: '';
   width: 12px;
@@ -749,7 +747,26 @@ body {
   box-shadow: 0 5px 15px rgba(84, 84, 212, 0.3);
 }
 
-/* ! transition customer-feedback -> our cases (à faire et comprendre) */
+/* ! decorative transition */
+
+.customer-feedbacks__arrow1 {
+    position: absolute;
+    translate: 250px -50px;
+    transform: rotate(250deg);
+    width: 350px;
+}
+
+.customer-feedbacks__arrow2 {
+    position: absolute;
+    translate: -600px -50px;
+    width: 300px;
+}
+
+.customer-feedbacks__circle {
+    position: absolute;
+    translate: -280px 190px;
+    width: 30px;
+}
 
 /* ============================================
    CASE STUDIES SECTION
@@ -1468,6 +1485,143 @@ body {
     z-index: 2;
 }
 
+ /* ============================================
+   FOOTER SECTION
+   ============================================ */
+
+.footer {
+  background: white;
+  padding: 60px 0 30px;
+  border-top: 1px solid #E5E7EB;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.footer__col {
+  flex: 1;
+}
+
+.footer__col--logo {
+  flex: 1.5;
+}
+
+.footer__col--social {
+  flex: 0.8;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.footer__logo {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.footer__description {
+  color: #6B7280;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.footer__badges {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background-color: #f4f4f4 ;
+}
+
+.footer__badge {
+  height: 40px;
+}
+
+.footer__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 20px;
+}
+
+.footer__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__links li {
+  margin-bottom: 12px;
+}
+
+.footer__links a {
+  color: #6B7280;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer__links a:hover {
+  color: #5454D4;
+}
+
+/* Contact */
+.footer__text {
+  color: #6B7280;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.footer__phone {
+  color: #1F2937;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* ? Social Icons - separate, under right */
+.footer__social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer__social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #F3F4F6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.footer__social-link img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.footer__social-link:hover {
+  background: #5454D4;
+  transform: translateY(-3px);
+}
+
+.footer__bottom {
+  border-top: 1px solid #E5E7EB;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer__copyright {
+  color: #9CA3AF;
+  font-size: 14px;
+}
+
 /* ============================================
    RESPONSIVE DESIGN TABLET
    ============================================ */
@@ -1532,6 +1686,14 @@ body {
 }
 
 /* Responsive tablet for customer feedbacks section */
+
+@media (max-width: 1180px){
+    .customer-feedbacks__arrow1,
+    .customer-feedbacks__arrow2,
+    .customer-feedbacks__circle {
+        visibility: hidden;
+    }
+}
 
 @media (max-width: 1024px) {
     .customer-feedbacks__clients {
@@ -1622,7 +1784,7 @@ body {
 /* ============================================
    RESPONSIVE DESIGN MOBILE
    ============================================ */
-   
+
 /* Responsive mobile for Header section */
 
 @media (max-width: 768px) {
@@ -1904,5 +2066,18 @@ body {
   }
   .cta__highlight-button {
     display: none;
+  }
+}
+
+/* responsive mobile for FOOTER section */
+
+@media (max-width: 768px) {
+  .footer__content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .footer__col--social {
+    justify-content: flex-start;
   }
 }
