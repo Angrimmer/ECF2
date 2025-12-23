@@ -15,12 +15,17 @@
   <body>
     <header>
       <nav class="header__navbar">
-        <div class="header__container">
+        <div class="header__container container container--wide">
           <img
             src="img/Logo.svg"
             alt="Logo Ik Developers"
-            class="header__logo__icon"
-          />
+            class="header__logo__icon"/>
+            <input type="checkbox" id="nav-toggle" class="nav__checkbox">
+            <label for="nav-toggle" class="nav__burger">
+              <span class="nav__burger-line"></span>
+              <span class="nav__burger-line"></span>
+              <span class="nav__burger-line"></span>
+            </label>
           <ul class="nav__menu">
             <li><a href="#about">About us</a></li>
             <li><a href="#services">Services</a></li>
@@ -32,7 +37,7 @@
           <a href="#contact" class="btn__primary">Contact us</a>
         </div>
       </nav>
-      <section class="header__hero">
+      <section id="about" class="header__hero">
         <div class="header__container">
           <div class="hero__content">
             <div class="hero__text">
@@ -60,7 +65,7 @@
     </header>
     <main>
       <!-- Section Services -->
-      <section class="services">
+      <section id="services" class="services">
         <div class="container">
           <h2 class="services__title">Services we offer</h2>
           <div class="services__grid">
@@ -222,8 +227,7 @@
               </button>
             </div>
           </div>
-        </div
-        <img src="img/Ellipse.png" alt="" class="leading-companies__ellipse leading-companies__ellipse--bottom">
+        </div>
         <!-- part Meet the People -->
         <div class="meet-people">
           <div class="meet-people__header">
@@ -262,7 +266,7 @@
      <!-- Section Customer Feedbacks -->
       <section class="customer-feedbacks">
         <div class="container">
-          <div class="customer-feedbacks__decoration"></div>
+          <div class="section__decoration section__decoration--lg-margin"></div>
           <h2 class="customer-feedbacks__title">
             Why customers love<br>
             <strong>working with us</strong>
@@ -323,14 +327,14 @@
         <img class="customer-feedbacks__circle" src="img/Ellipse.png" alt="round decoration">
       </section>
        <!-- Section Case Studies -->
-       <section class="case-studies">
+       <section id="case-studies" class="case-studies">
         <div class="container">
-        <div class="case-studies__decoration"></div>
-        <h2 class="case-studies__title">
+        <div class="section__decoration"></div>
+        <h2 class="section__title">
             Our recent<br>
             <strong>Case studies</strong>
         </h2>
-        <article class="case-studies__card case-studies__card--blue">
+        <article class="case-studies__card card-hover case-studies__card--blue">
             <div class="case-studies__mockups">
                 <img src="img/article/Case-study__image1.svg" alt="SCFC Canada mockups" class="case-studies__mockup-image">
             </div>
@@ -342,7 +346,7 @@
                 <a href="#" class="case-studies__link">Read more →</a>
             </div>
         </article>
-        <article class="case-studies__card case-studies__card--green">
+        <article class="case-studies__card card-hover case-studies__card--green">
             <div class="case-studies__mockups">
                 <img src="img/article/Case-study__image2.svg" alt="SCFC Canada mockups" class="case-studies__mockup-image">
             </div>
@@ -354,7 +358,7 @@
                 <a href="#" class="case-studies__link">Read more →</a>
             </div>
         </article>
-        <article class="case-studies__card case-studies__card--pink">
+        <article class="case-studies__card card-hover case-studies__card--pink">
             <div class="case-studies__mockups">
                 <img src="img/article/Case-study__image3.svg" alt="SCFC Canada mockups" class="case-studies__mockup-image">
             </div>
@@ -372,15 +376,15 @@
         </div>
       </section>
       <!-- Section Building-software -->
-      <section class="building-software">
-        <div class="building-software__container">
-          <div class="building-software__decoration"></div>
-          <h2 class="building-software__title">
+      <section id="how-it-works" class="building-software">
+        <div class="building-software__container container">
+          <div class="section__decoration"></div>
+          <h2 class="section__title">
             Way of building<br>
             <strong>Great Software</strong>
           </h2>        
         <!-- Card 1 -->
-          <div class="building-software__card">
+          <div class="building-software__card card-hover">
             <div class="building-software__content">
                 <h3>Build the right team to scale</h3>
                 <p>Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term (not the case with freelancers</p>
@@ -401,7 +405,7 @@
           </div>
           </div>       
           <!-- Card 2 -->
-          <div class="building-software__card building-software__card--reverse">
+          <div class="building-software__card card-hover building-software__card--reverse">
             <div class="building-software__content">
                 <h3>Build the right team to scale</h3>
                 <p>Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term (not the case with freelancers</p>
@@ -422,7 +426,7 @@
             </div>
           </div>
           <!-- Card 3 -->
-          <div class="building-software__card">
+          <div class="building-software__card card-hover">
             <div class="building-software__content">
               <h3>Build the right team to scale</h3>
               <p>Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term (not the case with freelancers</p>
@@ -454,13 +458,13 @@
         <!-- Section our approach -->
         <section class="approach">
           <div>
-            <div class="approach__decoration"></div>
-              <h2 class="approach__title">
+            <div class="section__decoration"></div>
+              <h2 class="section__title">
               Our design and<br>
               <strong>development approach</strong>
               </h2>        
               <div class="approach__cards">
-                <div class="approach__card">
+                <div class="approach__card card-hover">
                   <div class="approach__icon">
                     <img src="img/article/rocket.svg" alt="UX Icon rocket for the winners">
                 </div>
@@ -469,7 +473,7 @@
                     <p>Unlike other companies, we are a <strong>UX first</strong> development company. Projects are driven by designers and they make sure design and experiences translate to code.</p>
                 </div>
               </div>            
-              <div class="approach__card">
+              <div class="approach__card card-hover">
                 <div class="approach__icon">
                     <img src="img/article/code.svg" alt="Understanding Icon code for developers">
                 </div>
@@ -478,7 +482,7 @@
                     <p>Unlike other companies, we are a <strong>UX first</strong> development company. Projects are driven by designers and they make sure design and experiences translate to code.</p>
                 </div>
               </div>            
-              <div class="approach__card">
+              <div class="approach__card card-hover">
                 <div class="approach__icon">
                   <img src="img/article/pink__heartrate.svg" alt="Experience Icon heartrate for the runners">
                 </div>
@@ -487,7 +491,7 @@
                     <p>Unlike other companies, we are a <strong>UX first</strong> development company. Projects are driven by designers and they make sure design and experiences translate to code.</p>
                 </div>
               </div>            
-              <div class="approach__card">
+              <div class="approach__card card-hover">
                 <div class="approach__icon">
                   <img src="img/article/green__shield.svg" alt="Security Icon shield for the gamers">
                 </div>
@@ -496,7 +500,7 @@
                   <p>Unlike other companies, we are a <strong>UX first</strong> development company. Projects are driven by designers and they make sure design and experiences translate to code.</p>
                 </div>
               </div>            
-              <div class="approach__card">
+              <div class="approach__card card-hover">
                 <div class="approach__icon">
                   <img src="img/article/Yellow__ok.svg" alt="Code Review Icon ok for the undestand-boys (and girls)">
                 </div>
@@ -505,7 +509,7 @@
                   <p>Unlike other companies, we are a <strong>UX first</strong> development company. Projects are driven by designers and they make sure design and experiences translate to code.</p>
                 </div>
               </div>            
-              <div class="approach__card">
+              <div class="approach__card card-hover">
                 <div class="approach__icon">
                   <img src="img/article/violet__padlock.svg" alt="QA Icon for the secret of the hidden world (i'm a secret world game fan)">
                 </div>
@@ -520,8 +524,8 @@
       <!-- Section our tech stacks-->
       <section class="tech-stack">
         <div>
-          <div class="tech-stack__decoration"></div>
-          <h2 class="tech-stack__title">
+          <div class="section__decoration"></div>
+          <h2 class="section__title">
             Our<br>
             <strong>Tech Stack</strong>
           </h2>
@@ -568,8 +572,8 @@
       <!-- Section dev-progress -->
       <section class="dev-process">
         <div>
-          <div class="dev-process__decoration"></div>
-            <h2 class="dev-process__title">
+          <div class="section__decoration"></div>
+            <h2 class="section__title">
             How development<br>
             <strong>through Alcaline works</strong>
             </h2>
@@ -578,7 +582,7 @@
                 <div class="dev-process__trophy">🏆</div> <!-- i can stop laughing this one work !!-->
                   <div class="dev-process__step dev-process__step--top" style="left: 0%;">
                     <div class="dev-process__connector"></div>
-                      <div class="dev-process__card">
+                      <div class="dev-process__card card-hover">
                         <span class="dev-process__number">#1</span>
                         <h3>Assemble the right team</h3>
                         <p>We handle all aspects of vetting and choosing the right team that you don't have the time, expertise, or desire to do.</p>
@@ -586,7 +590,7 @@
                   </div>
                   <div class="dev-process__step dev-process__step--top" style="left: 33.3%;">
                     <div class="dev-process__connector"></div>
-                      <div class="dev-process__card">
+                      <div class="dev-process__card card-hover">
                         <span class="dev-process__number">#3</span>
                           <h3>Tech architecture</h3>
                           <p>We break monolithic apps into microservices. Decoupling the code allows teams to move faster and more independently.</p>
@@ -594,7 +598,7 @@
                   </div>
                   <div class="dev-process__step dev-process__step--top" style="left: 66.6%;">
                     <div class="dev-process__connector"></div>
-                      <div class="dev-process__card">
+                      <div class="dev-process__card card-hover">
                         <span class="dev-process__number">#5</span>
                         <h3>Code reviews</h3>
                         <p>Code reviews before release help detect issues like memory leaks, file leaks, performance signs, and general bad smells.</p>
@@ -602,7 +606,7 @@
                   </div>
                   <div class="dev-process__step dev-process__step--bottom" style="left: 16.65%;">
                     <div class="dev-process__connector"></div>
-                    <div class="dev-process__card">
+                    <div class="dev-process__card card-hover">
                       <span class="dev-process__number">#2</span>
                       <h3>Sprint planning</h3>
                       <p>Sprint roadmap is a collective planning effort. Team members collaborate to clarify items and ensure shared understanding.</p>
@@ -610,7 +614,7 @@
                   </div>           
                   <div class="dev-process__step dev-process__step--bottom" style="left: 50%;">
                 <div class="dev-process__connector"></div>
-                <div class="dev-process__card">
+                <div class="dev-process__card card-hover">
                     <span class="dev-process__number">#4</span>
                     <h3>Standups & weekly demos</h3>
                     <p>Standups, weekly demos, and weekly reviews make sure everyone is on the same page and can raise their concerns.</p>
@@ -618,7 +622,7 @@
                </div>
                 <div class="dev-process__step dev-process__step--bottom" style="left: 83.35%;">
                   <div class="dev-process__connector"></div>
-                    <div class="dev-process__card">
+                    <div class="dev-process__card card-hover">
                       <span class="dev-process__number">#6</span>
                       <h3>Iterative delivery</h3>
                       <p>We divide the implementation process into several checkpoints rather than a single deadline.</p>
@@ -630,33 +634,33 @@
       <!-- Section Featured Ressources -->
        <section class="featured-resources">
         <div>
-          <div class="featured-resources__decoration"></div>
-          <h2 class="featured-resources__title">
+          <div class="section__decoration"></div>
+          <h2 class="section__title">
             Featured<br>
             <strong>Resources</strong>
           </h2>
           <div class="featured-resources__grid">
-            <article class="featured-resources__card">
+            <article class="featured-resources__card card-hover">
                 <img src="img/article/rectangle1.svg" alt="Article" class="featured-resources__image">
                 <h3 class="featured-resources__card-title">How to Build a Scalable Application up to 1 Million Users on AWS</h3>
                 <a href="#" class="featured-resources__link">Read More →</a>
             </article>
-            <article class="featured-resources__card">
+            <article class="featured-resources__card card-hover">
                 <img src="img/article/rectangle2.svg" alt="Article" class="featured-resources__image">
                 <h3 class="featured-resources__card-title">How to Build a Scalable Application up to 1 Million Users on AWS</h3>
                 <a href="#" class="featured-resources__link">Read More →</a>
             </article>
-            <article class="featured-resources__card">
+            <article class="featured-resources__card card-hover">
                 <img src="img/article/rectangle3.svg" alt="Article" class="featured-resources__image">
                 <h3 class="featured-resources__card-title">How to Build a Scalable Application up to 1 Million Users on AWS</h3>
                 <a href="#" class="featured-resources__link">Read More →</a>
             </article>
-            <article class="featured-resources__card">
+            <article class="featured-resources__card card-hover">
                 <img src="img/article/rectangle4.svg" alt="Article" class="featured-resources__image">
                 <h3 class="featured-resources__card-title">How to Build a Scalable Application up to 1 Million Users on AWS</h3>
                 <a href="#" class="featured-resources__link">Read More →</a>
             </article>
-            <article class="featured-resources__card">
+            <article class="featured-resources__card card-hover">
                 <img src="img/article/rectangle5.svg" alt="Article" class="featured-resources__image">
                 <h3 class="featured-resources__card-title">How to Build a Scalable Application up to 1 Million Users on AWS</h3>
                 <a href="#" class="featured-resources__link">Read More →</a>
