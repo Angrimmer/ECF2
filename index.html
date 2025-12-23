@@ -19,8 +19,13 @@
           <img
             src="img/Logo.svg"
             alt="Logo Ik Developers"
-            class="header__logo__icon"
-          />
+            class="header__logo__icon"/>
+            <input type="checkbox" id="nav-toggle" class="nav__checkbox">
+            <label for="nav-toggle" class="nav__burger">
+              <span class="nav__burger-line"></span>
+              <span class="nav__burger-line"></span>
+              <span class="nav__burger-line"></span>
+            </label>
           <ul class="nav__menu">
             <li><a href="#about">About us</a></li>
             <li><a href="#services">Services</a></li>
@@ -32,7 +37,7 @@
           <a href="#contact" class="btn__primary">Contact us</a>
         </div>
       </nav>
-      <section class="header__hero">
+      <section id="about" class="header__hero">
         <div class="header__container">
           <div class="hero__content">
             <div class="hero__text">
@@ -60,7 +65,7 @@
     </header>
     <main>
       <!-- Section Services -->
-      <section class="services">
+      <section id="services" class="services">
         <div class="container">
           <h2 class="services__title">Services we offer</h2>
           <div class="services__grid">
@@ -322,7 +327,7 @@
         <img class="customer-feedbacks__circle" src="img/Ellipse.png" alt="round decoration">
       </section>
        <!-- Section Case Studies -->
-       <section class="case-studies">
+       <section id="case-studies" class="case-studies">
         <div class="container">
         <div class="section__decoration"></div>
         <h2 class="section__title">
@@ -371,7 +376,7 @@
         </div>
       </section>
       <!-- Section Building-software -->
-      <section class="building-software">
+      <section id="how-it-works" class="building-software">
         <div class="building-software__container container">
           <div class="section__decoration"></div>
           <h2 class="section__title">

@@ -1,6 +1,7 @@
 /* ============================================
    CSS VARIABLES
    ============================================ */
+
 :root {
   /* Colors */
   --color-primary: #EC4899;
@@ -151,7 +152,6 @@ body {
   z-index: 20;
 }
 
-/* Variation avec plus de lift */
 .card-hover--lift-8:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
