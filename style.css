@@ -53,6 +53,11 @@
   --radius-lg: 16px;
   --radius-full: 50%;
 
+  /* Fontsizes */
+    --font-size-base: 14px;
+    --font-size-big: 28px;
+
+
 }
 
 /* TODO: think to add font-size variables */
@@ -438,7 +443,7 @@ body {
 }
 
 .services__card__text {
-  font-size: 14px;
+  font-size: var(--font-size-base);
   color: var(--color-text-light);
   line-height: 1.6;
 }
@@ -836,13 +841,13 @@ body {
 
 .customer-feedbacks__client__stars {
   color: #FDB022;
-  font-size: 14px;
+  font-size: var(--font-size-base);
   margin-bottom: 8px;
   letter-spacing: 2px;
 }
 
 .customer-feedbacks__client__name {
-  font-size: 14px;
+  font-size: var(--font-size-base);
   font-weight: 600;
   color: var(--color-text-dark);
   margin-bottom: 4px;
@@ -1113,7 +1118,7 @@ body {
 }
 
 .building-software__author .title {
-  font-size: 14px;
+  font-size: var(--font-size-base);
   font-style: normal;
   color: var(--color-text-secondary);
 }
@@ -1408,7 +1413,7 @@ body {
 .dev-process__number {
   color: var(--color-primary);
   font-weight: 700;
-  font-size: 14px;
+  font-size: var(--font-size-base);
   margin-bottom: 8px;
   display: block;
 }
@@ -1422,7 +1427,7 @@ body {
 }
 
 .dev-process__card p {
-  font-size: 14px;
+  font-size: var(--font-size-base);
   color: var(--color-text-secondary);
   line-height: 1.6;
 }
@@ -1470,7 +1475,7 @@ body {
   display: inline-block;
   color: #8B5CF6;
   font-weight: 600;
-  font-size: 14px;
+  font-size: var(--font-size-base);
   padding: 0 20px 20px;
   text-decoration: none;
   transition: var(--transition-base);
@@ -1580,7 +1585,7 @@ body {
 
 .footer__description {
   color: var(--color-text-secondary);
-  font-size: 14px;
+  font-size: var(--font-size-base);
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -1616,7 +1621,7 @@ body {
 .footer__links a {
   color: var(--color-text-secondary);
   text-decoration: none;
-  font-size: 14px;
+  font-size: var(--font-size-base);
   transition: var(--transition-base);
 }
 
@@ -1627,7 +1632,7 @@ body {
 /* Contact */
 .footer__text {
   color: var(--color-text-secondary);
-  font-size: 14px;
+  font-size: var(--font-size-base);
   line-height: 1.6;
   margin-bottom: 16px;
 }
@@ -1674,7 +1679,7 @@ body {
 
 .footer__copyright {
   color: #9CA3AF;
-  font-size: 14px;
+  font-size: var(--font-size-base);
 }
 
 
@@ -1998,7 +2003,7 @@ body {
   }
 
   .leading-companies__title {
-    font-size: 28px;
+    font-size: var(--font-size-big);
   }
 
   .leading-companies__title br {
@@ -2019,7 +2024,7 @@ body {
   }
 
   .meet-people__title {
-    font-size: 28px;
+    font-size: var(--font-size-big);
   }
 
   .meet-people__slider {
@@ -2055,7 +2060,7 @@ body {
   }
 
   .customer-feedbacks__title {
-    font-size: 28px;
+    font-size: var(--font-size-big);
   }
 
   .customer-feedbacks__testimonial {
@@ -2110,7 +2115,7 @@ body {
   }
 
   .building-software__content h3 {
-    font-size: 28px;
+    font-size: var(--font-size-big);
   }
 }
 
@@ -2195,7 +2200,7 @@ body {
   }
 
   .cta__title {
-    font-size: 28px;
+    font-size: var(--font-size-big);
   }
 
   .cta__button {
