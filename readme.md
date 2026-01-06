@@ -10,7 +10,7 @@ Comment je m'en suis rendu compte ?
 
 ## A quoi ce projet consiste ? 
 
-!(/img/img__readme.png "sample img")
+!(img\img__readme.png "sample img")
 
 C'est simple, c'est un projet simulant la création du site web d'une agence de développers (comme quoi le monde est petit !) nommé "JK Developers" rassemblé en une dizaine de catégories avec pas mal de petites décorations afin de montrer que l'on comprends bien comment se précise un site web et surtout, que l'on comprends comment prendre une maquette et en faire de jolies petites lignes de codes ! 
 
